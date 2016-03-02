@@ -1,0 +1,26 @@
+From e43dbf1198eb12b78c64c42b0c8bcbe7c13030ab Mon Sep 17 00:00:00 2001
+From: Ikey Doherty <ikey@solus-project.com>
+Date: Wed, 2 Mar 2016 05:37:18 +0000
+Subject: [PATCH] Moron, fix the path and stop rushing..
+
+Signed-off-by: Ikey Doherty <ikey@solus-project.com>
+---
+ data/solus-sc.desktop | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/solus-sc.desktop b/data/solus-sc.desktop
+index a3b0cd1..865f9d0 100644
+--- a/data/solus-sc.desktop
++++ b/data/solus-sc.desktop
+@@ -5,7 +5,7 @@ GenericName=Software Center
+ GenericName[en_GB]=Software Center
+ Comment=Install, Remove and Update System Applications
+ Comment[en_GB]=Install, Remove and Update System Applications
+-Exec=/usr/bin/evolve-sc
++Exec=/usr/bin/solus-sc
+ Terminal=false
+ Type=Application
+ StartupNotify=false
+-- 
+2.7.1
+

@@ -4,11 +4,11 @@
 from pisi.actionsapi import get, autotools, pisitools
 
 def install():
-    files = ["basket.py", "groups.py", "updates.py", "style.css",
+    files = ["basket.py", "groups.py", "updates.py",
              "components.py", "interface.py", "package_view.py", "widgets.py"]
 
     for f in files:
-        pisitools.insinto("/usr/lib/evolve-sc", f)
+        pisitools.insinto("/usr/lib/solus-sc", f)
     pisitools.dobin("main.py")
-    pisitools.domove("/usr/bin/main.py", "/usr/bin", destinationFile="evolve-sc")
-    pisitools.insinto("/usr/share/applications", "data/evolve-sc.desktop")
+    pisitools.domove("/usr/bin/main.py", "/usr/bin", destinationFile="solus-sc")
+    pisitools.insinto("/usr/share/applications", "data/solus-sc.desktop")
